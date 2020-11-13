@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const PORT = 3000
+const { PORT } = require('./src/helpers/env')
 
-app.use('/api', (req, res) => {
+app.use('/', (req, res) => {
     res.send('HOLLA')
 })
 app.listen(PORT, () => {
-    console.log(`ON ${PORT}`)
+    console.log(`RUNNING ON PORT ${PORT}`)
 })
