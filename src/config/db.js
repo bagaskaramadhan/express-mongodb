@@ -1,3 +1,5 @@
+const { PW, DB, ORG } = require('../helpers/env')
+
 module.exports = {
-    MONGO_URI: 'mongodb+srv://bagaskaramadhan:bagaskara1997@cluster0.oqxs0.mongodb.net/mongo_api?retryWrites=true&w=majority'
+    MONGO_URI: `mongodb+srv://${ORG}:${PW}@cluster0.oqxs0.mongodb.net/${DB}?retryWrites=true&w=majority`
 }
